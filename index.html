@@ -1,32 +1,157 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- 🦊 Votre page ici -->
+  <div class="all">
+    <div class="croix"> <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path
+          d="M1.16675 12.8333L7.00008 6.99999M7.00008 6.99999L12.8334 1.16666M7.00008 6.99999L12.8334 12.8333M7.00008 6.99999L1.16675 1.16666"
+          stroke="#B3B3B3" stroke-width="1.25" stroke-linecap="round" />
+      </svg></div>
+    <img src="img/couvertures/saccage_couverture.jpg" alt="couv">
+
+    <div class="head">
+      <div class="txt">
+        <h1>SACCAGE</h1>
+        <h2>Frederik Peeters</h2>
+        <h3>roman graphique <br>
+          éditions Atrabile <br>
+          2019</h3>
+      </div>
+      <div class="rate">
         <select class="star-rating" aria-label="Note utilisateur">
-            <option value="">Select a rating</option>
-            <option value="5">Excellent</option>
-            <option value="4">Very Good</option>
-            <option value="3">Average</option>
-            <option value="2">Poor</option>
-            <option value="1">Terrible</option>
+          <option value="">Select a rating</option>
+          <option value="5">Excellent</option>
+          <option value="4">Très bien</option>
+          <option value="3">Moyen</option>
+          <option value="2">Pas mal</option>
+          <option value="1">Mauvais</option>
         </select>
-    -->
-    <!-- 💡 Script pour gérer le rating d'un livre -->
-    <script src="scripts/star-rating.min.js"></script>
-    <script>
-      var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
-      });
-    </script>
-  </body>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="102" height="31" viewBox="0 0 102 31" fill="none">
+            <path
+              d="M83.1249 6.38523L89.0344 12.2801C90.3131 13.5576 91.9723 14.3851 93.7621 14.6381L86.6706 21.7119C86.4212 19.9233 85.5906 18.2663 84.3068 16.996L78.3972 11.1011L83.1249 6.38523ZM84.3067 0.490373L72.4876 12.2801C72.1749 12.5935 71.9995 13.0183 72 13.461C72.0005 13.9038 72.1769 14.3282 72.4904 14.6408C72.8038 14.9535 73.2287 15.1289 73.6715 15.1284C74.1143 15.1279 74.5387 14.9515 74.8514 14.6381L76.0334 13.4591L81.943 19.3539C82.4093 19.8174 82.7794 20.3685 83.0319 20.9755C83.2845 21.5825 83.4145 22.2334 83.4145 22.8908C83.4145 23.5482 83.2845 24.1992 83.0319 24.8062C82.7794 25.4132 82.4093 25.9643 81.943 26.4277L84.3068 28.7857L91.3628 21.7473L99.6362 30H102V27.642L93.7267 19.3893L100.854 12.2801L98.4898 9.92215C97.5492 10.862 96.2738 11.39 94.9441 11.39C93.6143 11.39 92.3389 10.862 91.3983 9.92215L85.4887 4.02729L86.6706 2.84832C86.9833 2.5349 87.1587 2.1101 87.1582 1.66737C87.1577 1.22464 86.9813 0.800249 86.6678 0.487556C86.3544 0.174864 85.9295 -0.000514521 85.4867 1.1339e-06C85.044 0.000516789 84.6195 0.176952 84.3067 0.490373Z"
+              fill="#B3B3B3" />
+            <path
+              d="M51 7.45829H48.75V16.3957L55.875 20.641L57 18.8088L51 15.2786V7.45829ZM50.25 1.5C42.795 1.5 36.75 7.50298 36.75 14.9062C36.75 22.3093 42.78 28.3123 50.25 28.3123C57.705 28.3123 63.75 22.3093 63.75 14.9062C63.75 7.50298 57.705 1.5 50.25 1.5ZM50.25 25.3332C44.445 25.3332 39.75 20.6708 39.75 14.9062C39.75 9.14151 44.445 4.47915 50.25 4.47915C56.055 4.47915 60.75 9.14151 60.75 14.9062C60.75 20.6708 56.055 25.3332 50.25 25.3332Z"
+              fill="#B3B3B3" />
+            <path
+              d="M21.75 1C19.14 1 16.635 2.32425 15 4.41689C13.365 2.32425 10.86 1 8.25 1C3.63 1 0 4.9564 0 9.99183C0 16.1717 5.1 21.2071 12.825 28.8583L15 31L17.175 28.842C24.9 21.2071 30 16.1717 30 9.99183C30 4.9564 26.37 1 21.75 1ZM15.15 26.4223L15 26.5858L14.85 26.4223C7.71 19.376 3 14.7166 3 9.99183C3 6.72207 5.25 4.26975 8.25 4.26975C10.56 4.26975 12.81 5.88828 13.605 8.12807H16.41C17.19 5.88828 19.44 4.26975 21.75 4.26975C24.75 4.26975 27 6.72207 27 9.99183C27 14.7166 22.29 19.376 15.15 26.4223Z"
+              fill="#B3B3B3" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-commentaire">
+      <p class="commentaire-texte">Ajouter un commentaire...</p>
+    </div>
+
+    <p>"Saccage" de Frederik Peeters est
+      une œuvre insaisissable, mêlant images
+      et bande dessinée pour dépeindre une
+      épopée tourmentée. Dans ce monde
+      chaotique et baroque, un homme
+      traverse un univers dément, où l'histoire
+      humaine semble se télescoper dans un
+      magma de visions fantasmagoriques.
+      Cette fable d'anticipation et allégorie
+      hallucinée présente un monde en déliquescence,
+      sidérant comme un massacre et effrayant comme
+      un cauchemar. Les dessins de Peeters, sans
+      texte mais expressifs, offrent une lecture riche
+      et profonde, faisant de "Saccage" une œuvre
+      coup-de-poing, unique et incandescente, destinée
+      à marquer les esprits.</p>
+    <div class="rating">
+      <svg xmlns="http://www.w3.org/2000/svg" width="76" height="12" viewBox="0 0 76 12" fill="none">
+        <path
+          d="M22 9.64421L25.708 12L24.724 7.56L28 4.57263L23.686 4.18737L22 0L20.314 4.18737L16 4.57263L19.276 7.56L18.292 12L22 9.64421Z"
+          fill="#B3B3B3" />
+        <path
+          d="M6 9.64421L9.708 12L8.724 7.56L12 4.57263L7.686 4.18737L6 0L4.314 4.18737L0 4.57263L3.276 7.56L2.292 12L6 9.64421Z"
+          fill="#B3B3B3" />
+        <path
+          d="M54 9.64421L57.708 12L56.724 7.56L60 4.57263L55.686 4.18737L54 0L52.314 4.18737L48 4.57263L51.276 7.56L50.292 12L54 9.64421Z"
+          fill="#B3B3B3" />
+        <path
+          d="M38 9.64421L41.708 12L40.724 7.56L44 4.57263L39.686 4.18737L38 0L36.314 4.18737L32 4.57263L35.276 7.56L34.292 12L38 9.64421Z"
+          fill="#B3B3B3" />
+        <path
+          d="M76 4.57263L71.686 4.18105L70 0L68.314 4.18737L64 4.57263L67.276 7.56L66.292 12L70 9.64421L73.708 12L72.73 7.56L76 4.57263ZM70 8.46316L67.744 9.89684L68.344 7.19368L66.352 5.37474L68.98 5.13474L70 2.58947L71.026 5.14105L73.654 5.38105L71.662 7.2L72.262 9.90316L70 8.46316Z"
+          fill="#B3B3B3" />
+      </svg>
+    </div>
+    <h6>note moyenne</h6>
+    <a href="https://www.reddit.com/r/EldenRingLoreTalk/">
+      <h5>Voir les commentaires</h5>
+    </a>
+
+  </div>
+  <div class="nav">
+    <a
+      href="https://www.google.com/search?q=les+cours+de+frontend+c%27est+nul&sca_esv=76a168b65a348735&sca_upv=1&ei=XfkwZui_LJSai-gP_JqZmA8&ved=0ahUKEwio4pnIjOqFAxUUzQIHHXxNBvMQ4dUDCBA&uact=5&oq=les+cours+de+frontend+c%27est+nul&gs_lp=Egxnd3Mtd2l6LXNlcnAiH2xlcyBjb3VycyBkZSBmcm9udGVuZCBjJ2VzdCBudWwyCBAhGKABGMMESPIbUO0JWIMTcAF4AJABAJgB1gGgAb4KqgEFMi41LjK4AQPIAQD4AQGYAgSgAo0FwgIIEAAYgAQYogSYAwDiAwUSATEgQIgGAZIHBTEuMi4xoAeoIg&sclient=gws-wiz-serp">
+      <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.46216 13.3333L19.8998 5.13361C20.0685 5.04949 20.2669 5.04949 20.4355 5.13361L36.8732 13.3333"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M33.532 18.3333V33C33.532 34.1046 32.6366 35 31.532 35H8.80322C7.69865 35 6.80322 34.1046 6.80322 33V18.3333"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg> </a>
+    <a href="https://open.spotify.com/intl-fr/track/1nBnbpYICt3Zezeug80vWm">
+      <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M28.7422 28.3333L35.4244 35" stroke="white" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path
+          d="M5.35449 18.3333C5.35449 25.6971 11.3379 31.6667 18.7189 31.6667C22.4158 31.6667 25.7621 30.1691 28.1815 27.7489C30.5926 25.337 32.0833 22.0089 32.0833 18.3333C32.0833 10.9695 26.0999 5 18.7189 5C11.3379 5 5.35449 10.9695 5.35449 18.3333Z"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+    <a href="https://www.youtube.com/watch?v=wR3sCGm5B24&ab_channel=RysmaTV">
+      <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.24634 31.6667V7C7.24634 5.89543 8.14177 5 9.24634 5H33.3752C33.7065 5 33.9752 5.26863 33.9752 5.6V27.8571"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" />
+        <path d="M10.5874 28.3333L33.9751 28.3333" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+        <path d="M10.5874 35H33.9751" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+        <path d="M10.5874 35C8.74216 35 7.2463 33.5076 7.2463 31.6667C7.2463 29.8257 8.74216 28.3333 10.5874 28.3333"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M15.5991 11.6667L25.6224 11.6667" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+    </a>
+    <a href="https://twitter.com/apokimonte/status/1785312267354997148">
+      <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M9.13843 33.3333V27C9.13843 23.134 12.2724 20 16.1384 20H25.5262C29.3921 20 32.5262 23.134 32.5262 27V33.3333"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M20.8324 20C24.5228 20 27.5146 17.0152 27.5146 13.3333C27.5146 9.65142 24.5228 6.66666 20.8324 6.66666C17.1419 6.66666 14.1501 9.65142 14.1501 13.3333C14.1501 17.0152 17.1419 20 20.8324 20Z"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+
+
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: false,
+    });
+
+  </script>
+</body>
+
 </html>
